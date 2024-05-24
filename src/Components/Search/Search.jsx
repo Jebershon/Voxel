@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { data } from './Bloggenerate.jsx';
+import { data } from '../data.js';
 import SearchCard from './SearchCard.jsx';
 function Search()
 {

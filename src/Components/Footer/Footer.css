@@ -1,0 +1,53 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(151, 151, 151);  
+    margin: 20px; 
+}
+.about{
+    padding: 10px;
+    margin: 10px;
+}
+.div1{
+    padding: 10px;
+    margin: 10px;
+}
+.div2{
+    padding: 10px;
+    margin: 10px;
+}
+.div3{
+    padding: 10px;
+    margin: 10px;
+}
+.div4{
+    padding: 10px;
+    margin: 10px;
+}
+.div4 li{
+    font-variant: normal;
+}
+.about p{
+    width: 300px;
+    height: fit-content;
+    color: rgb(155, 155, 155);
+}
+hr{
+    color: white;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.copyright ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

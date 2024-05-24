@@ -1,0 +1,103 @@
+.backbtn{
+  padding: 15px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  transition: 1s;
+  border: none;
+}
+.backbtn:hover{
+  transform: scale(1.1);
+}
+.back{
+  transition: 1s;
+}
+.back:hover{
+  transform: translateX(-.45rem);
+}
+.parallax {
+    background-image: url(https://mobirise.com/extensions/motionm5/video_agency/assets/images/mbr-1920x1277.jpg);
+    min-height: 100vh; 
+    filter: grayscale(100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax1 {
+    background-image: url(https://www.w3schools.com/howto/img_parallax.jpg);
+    min-height: 100vh; 
+    filter: grayscale(100%);
+    transition: 3s ease;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax1:hover{
+    filter: grayscale(0%);
+  }
+  .parallax2 {
+    background-image: url(	https://www.w3schools.com/howto/img_parallax3.jpg);
+    min-height: 100vh; 
+    filter: grayscale(100%);
+    transition: 3s ease;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax2:hover{
+    filter: grayscale(0%);
+  }
+  .box{
+    display: flex;
+    justify-content: start;
+    padding: 50px;
+  }
+.header{
+    color: transparent;
+    height: fit-content;
+    width: 100%;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    transition: 3s;
+    border-radius: 5px;
+  }
+  .header h1{
+    color: #4a4a4a;
+  }
+  .header:hover{
+    color: #ececec;
+    backdrop-filter: blur(0px) saturate(98%);
+    -webkit-backdrop-filter: blur(0px) saturate(98%);
+    background-color: rgba(0, 0, 0, 0.39);
+  }
+@media screen and (max-width:700px) {
+    .header{
+        width: 100%;
+        font-size: medium;
+    }
+}
+.float .card-box {
+    height: 100%;
+    padding: 2rem 0;
+}
+.card-box {
+    width: 100%;
+}
+.float {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff;
+}
+section {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    background-color: #ffffff;
+}

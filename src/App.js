@@ -1,16 +1,28 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Bloggenerate from './Components/Bloggenerate.jsx';
-import Contact from './Components/Contact.jsx';
-import Head from './Components/Header';
-import Search from './Components/Search.jsx';
+import Home from './Components/Home/Home.jsx';
+import './App.css';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Restriction from './Components/Restriction.jsx';
+import Aboutus from './Components/About/Aboutus.jsx';
+import Signin from './Components/Acount/Signin.jsx';
+import Signup from './Components/Acount/Signup.jsx';
+import Post from './Components/Create/Post.jsx';
+import Profile from './Components/Create/Profile.jsx';
+import Blog from './Components/Display/Blog.jsx';
 function App() {
   return (
     <>
-       <Head/>
-       <Bloggenerate/>
-       <Search/>
-       <br/>
-       <Contact/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/Signin' element={<Signin/>}/>
+      <Route path='/Signup' element={<Signup/>}/>
+      <Route path='/Restriction' element={<Restriction/>}/>
+      <Route path='/About' element={<Aboutus/>}/>
+      <Route path='/Contribute' element={<Post/>}/>
+      <Route path='/Profile' element={<Profile/>}/>
+      <Route path='/Explore' element={<Blog/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }

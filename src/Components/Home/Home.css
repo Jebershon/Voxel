@@ -169,20 +169,18 @@ hr .new1 {
 .card1{
   background-color: #101010;
   color: aquamarine;
-  margin-left: 50px;
+  margin-left: 90px;
   width: 300px;
-  z-index: 1;
 }
 .card2{
   background-color: #101010;
   color: aquamarine;
-  margin-right: 50px;
+  margin-right: 90px;
   width: 300px;
-  z-index: 1;
 }
 
 .head{
-  background-color: #c3c3c3;
+  background-color: rgb(232,255,175);
 }
 .dots{
   display: flex;
@@ -275,9 +273,9 @@ hr .new1 {
   line-height: 150%;
   padding: 16px;
   margin: 20px;
-  background: #ff930f;
+  background: rgb(232,255,175);
   background-blend-mode: multiply;
-  background: linear-gradient(to top, #ff930f, #ffcc33);
+  background: linear-gradient(to top, rgb(214, 255, 111), rgb(229, 255, 165));
   transition: background-color 1s ease-in-out;
   overflow: hidden;
 }

@@ -106,8 +106,7 @@ function Home() {
               </div>
           </CardHeader>
           <Card.Body className='content'>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi asperiores dignissimos perspiciatis quas numquam, minus blanditiis, distinctio repudiandae a cum sed quisquam enim error quis quam at dolores natus ipsam.
-             <div className='gt'>&gt;</div>
+          Join a vibrant community of creators and readers on Voxel, where every detail falls into place perfectly. From insightful blog posts and stunning imagery to interactive discussions and community collaborations, Voxel is more than just a blogging platform—it's a space where your ideas come to life.<div className='gt'>&gt;</div>      
           </Card.Body>
         </Card>
 <br/>
@@ -120,8 +119,7 @@ function Home() {
               </div>
           </CardHeader>
           <Card.Body className='content'>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi asperiores dignissimos perspiciatis quas numquam, minus blanditiis, distinctio repudiandae a cum sed quisquam enim error quis quam at dolores natus ipsam.
-             <div className='gt'>&gt;</div>
+          At Voxel, we are dedicated to transforming the art of blogging into an immersive and visually captivating experience. Whether you're an aspiring writer, a seasoned blogger, or someone who simply loves to explore engaging content, Voxel is designed to provide a seamless and inspiring environment.<div className='gt'>&gt;</div>
           </Card.Body>
         </Card>
         </div>
@@ -134,18 +132,18 @@ function Home() {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.3} speed={-0.3}>
+      <ParallaxLayer offset={1.4} speed={-0.1}>
         <div className='details'>
           <Container>
             <Row>
               <Col>
               <div class="cad">
                 <div class="cad-front">
-                  <p class="titl">John Doe</p>
-                  <p class="subtitl">Web Dev</p>
+                  <p class="titl">Easy Content Creation</p>
+                  <p class="subtitl">Voxel</p>
                 </div>
                 <div class="cad-back">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Craft and publish engaging blog posts with our intuitive editor and streamlined tools.</p>
                 </div>
               </div>
               </Col>
@@ -153,11 +151,11 @@ function Home() {
               <Col>
               <div class="cad">
                 <div class="cad-front">
-                  <p class="titl">John Doe</p>
-                  <p class="subtitl">Web Dev</p>
+                  <p class="titl">Engage with Community</p>
+                  <p class="subtitl">Voxel</p>
                 </div>
                 <div class="cad-back">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Connect and collaborate with like-minded creators and readers.</p>
                 </div>
               </div>
               </Col>
@@ -165,11 +163,11 @@ function Home() {
               <Col>
               <div class="cad">
                 <div class="cad-front">
-                  <p class="titl">John Doe</p>
-                  <p class="subtitl">Web Dev</p>
+                  <p class="titl">Advanced Features</p>
+                  <p class="subtitl">Voxel</p>
                 </div>
                 <div class="cad-back">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Leverage cutting-edge technology for enhanced discoverability and accessibility.</p>
                 </div>
               </div>
               </Col>
@@ -193,8 +191,8 @@ function Home() {
       </div>
       </ParallaxLayer>
 
-     <ParallaxLayer offset={1.8} speed={-0.1}>
-     <img src={ill3} width={800} height={800} className='main-ill'></img>
+     <ParallaxLayer offset={2.1} speed={-0.3}>
+     <img src={ill3} width={550} height={550} className='main-ill'></img>
      </ParallaxLayer>
 
 
@@ -204,73 +202,37 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Features</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Discover the innovative features that make Voxel stand out. From a powerful search function and advanced tagging system to responsive design and customization options, our platform is designed to meet all your blogging needs. Explore how these features can enhance your experience and make your content shine.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>Our Mission</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        At Voxel, our mission is to inspire and empower creativity through captivating imagery and engaging text. We strive to provide a platform where every story finds its unique voice and every detail is meticulously crafted to perfection.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>What We Do</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Voxel specializes in creating compelling content that blends modern technologies with innovative features. From insightful blog posts to visually stunning images, we curate a diverse range of topics that inform, inspire, and captivate our audience.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header>Why Choose Voxel</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Voxel stands out by prioritizing quality and creativity. Our team of dedicated professionals is committed to delivering content that not only meets but exceeds your expectations. Discover why countless creators and readers trust Voxel as their go-to platform for authentic and immersive storytelling.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
         <Accordion.Header>Update</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Stay informed with Voxel's latest updates. From new feature rollouts to platform enhancements, we keep you in the loop with all the exciting changes happening at Voxel. Our commitment to continuous improvement ensures you always have the best tools at your fingertips.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="5">
         <Accordion.Header>Knowledge</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Dive into a wealth of knowledge with Voxel. Our blog covers a diverse range of topics, offering insights, tips, and tutorials to help you grow your skills and stay ahead in your blogging journey. Whether you're looking to improve your writing, enhance your SEO, or learn about the latest industry trends, Voxel has you covered.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

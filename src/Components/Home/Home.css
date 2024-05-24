@@ -125,12 +125,12 @@ hr .new1 {
 }
 @media screen and (max-width:1000px) {
   .mob{
+    display: contents;
     backdrop-filter: blur(6px) saturate(180%);
     -webkit-backdrop-filter: blur(6px) saturate(180%);
     background-color: rgba(61, 61, 61, 0.37);
     color: white;
     margin: 50px;
-    display: contents;
   }
   .detail1{
   display: none;

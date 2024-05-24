@@ -127,22 +127,22 @@ function Home() {
         </div>
       </ParallaxLayer>
       
-      <ParallaxLayer offset={0.2} speed={-0.3}>
+      <ParallaxLayer offset={0.1} speed={-0.3}>
         <div className='ill'>
         <img src={ill1} width={400} height={400} className='ill1'></img>
         <img src={ill2} width={400} height={400}></img>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.4} speed={-0.3}>
+      <ParallaxLayer offset={1.3} speed={-0.3}>
         <div className='details'>
           <Container>
             <Row>
               <Col>
               <div class="cad">
                 <div class="cad-front">
-                  <p class="title">John Doe</p>
-                  <p class="subtitle">Web Dev</p>
+                  <p class="titl">John Doe</p>
+                  <p class="subtitl">Web Dev</p>
                 </div>
                 <div class="cad-back">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -153,8 +153,8 @@ function Home() {
               <Col>
               <div class="cad">
                 <div class="cad-front">
-                  <p class="title">John Doe</p>
-                  <p class="subtitle">Web Dev</p>
+                  <p class="titl">John Doe</p>
+                  <p class="subtitl">Web Dev</p>
                 </div>
                 <div class="cad-back">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -165,8 +165,8 @@ function Home() {
               <Col>
               <div class="cad">
                 <div class="cad-front">
-                  <p class="title">John Doe</p>
-                  <p class="subtitle">Web Dev</p>
+                  <p class="titl">John Doe</p>
+                  <p class="subtitl">Web Dev</p>
                 </div>
                 <div class="cad-back">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -181,8 +181,10 @@ function Home() {
       <ParallaxLayer offset={0.4}>
       <div>
         <Card style={{ width: '18rem' }} className='mob'>
-        <Card.Body>
+          <CardHeader>
           <Card.Title>Our Latest Insights</Card.Title>
+          </CardHeader>
+        <Card.Body>
           <Card.Text>
           Stay ahead of the curve with Voxel's latest articles on emerging trends and innovative ideas. From tech advancements to creative storytelling, our insights keep you informed and inspired.
           </Card.Text>

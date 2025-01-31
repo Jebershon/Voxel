@@ -10,13 +10,13 @@ export default function Aboutus(){
         <div className='parallax'>
             <button className='backbtn'><div className='back' onClick={()=>navigate("/")}><ArrowBackIos/></div></button>
             <div className='box'>
-            <div className='header'>
+            <div className='header'  data-aos="zoom-in" data-aos-duration="3000">
             <h1>Meet the Team</h1>
             <p>At Voxel, we're committed to delivering captivating content through a fusion of compelling imagery and engaging text. Our blog showcases exclusive creations, harnessing modern technologies and innovative features to craft immersive experiences. Dive into our curated collection of articles and explore the latest trends, insights, and inspirations shaping the digital landscape</p>        
             </div>
             </div>
         </div>
-        <section class="features3 float" id="features3-2">    
+        <section class="features3 float" id="features3-2" data-aos="fade-up" data-aos-duration="2000">    
             <div class="container">
                 <div class="main_header">
                     <div class="row justify-content-center">
@@ -34,7 +34,7 @@ export default function Aboutus(){
             </div>
         </section>
         <div class="parallax1">
-        <div className='header'>
+        <div className='header'  data-aos="zoom-in" data-aos-duration="3000">
             <h1>Awards and Recognition</h1>
             <p>At Voxel, we're committed to delivering captivating content through a fusion of compelling imagery and engaging text. Our blog showcases exclusive creations, harnessing modern technologies and innovative features to craft immersive experiences.
                 
@@ -43,7 +43,7 @@ export default function Aboutus(){
                  Dive into our curated collection of articles and explore the latest trends, insights, and inspirations shaping the digital landscape</p>        
             </div>
         </div>
-        <section class="features3 float" id="features3-2">    
+        <section class="features3 float" id="features3-2" data-aos="fade-up" data-aos-duration="2000">    
             <div class="container">
                 <div class="main_header">
                     <div class="row justify-content-center">
@@ -61,7 +61,7 @@ export default function Aboutus(){
             </div>
         </section>
         <div class="parallax2">
-        <div className='header'>
+        <div className='header'  data-aos="zoom-in" data-aos-duration="3000">
             <h1>Community Involvement</h1>
             <p>At Voxel, we're committed to delivering captivating content through a fusion of compelling imagery and engaging text. Our blog showcases exclusive creations, harnessing modern technologies and innovative features to craft immersive experiences.
                 

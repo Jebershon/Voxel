@@ -6,6 +6,9 @@
     color: rgb(151, 151, 151);  
     margin: 20px; 
 }
+.hed{
+    color: grey;
+}
 .about{
     padding: 10px;
     margin: 10px;

@@ -1,6 +1,6 @@
 import { AddComment, Favorite, Share, ThumbUp } from '@mui/icons-material';
 import React, { useState } from 'react';
-import {Card} from 'react-bootstrap';
+import {Card, Container, Row , Col} from 'react-bootstrap';
 import {data} from '../data.js';
 import './Blog.css';
 import { ArrowBackIos } from '@mui/icons-material';
@@ -10,12 +10,14 @@ function Blog() {
   const navigate = useNavigate();
   function ChangeState(){
     setState((state!=='hidden')?'hidden':'');
-    
   }
   return (
     <>
     <button className='backbtn'><div className='back' onClick={()=>navigate("/")}><ArrowBackIos/></div></button>
+    <Container>
+    <Row>
     {data.map(x=>
+    <Col lg={6}>
     <div className='m-3 p-1'>
     <Card className='car'>
       <Card.Body>
@@ -23,11 +25,13 @@ function Blog() {
       <Card.Title className='mt-2'>
         <h1>{x.name}</h1>
       </Card.Title>
-        <Card.Text>{x.content}</Card.Text>
-        <Card.Text style={{float:"right"}}>-{x.author}</Card.Text>
+      <div className='scroll'>
+        <Card.Text style={{color:"white"}}>{x.content}</Card.Text>
+        <Card.Text style={{float:"right",color:"white"}}>-{x.author}</Card.Text>
         <br/><br/><br/>
         <center><Card.Img src={x.img} className='post'></Card.Img></center>
         <br/>
+        </div>
         <div hidden={state} className='comment'>
           <center>
             <textarea style={{borderRadius: 5,width:"100%"}} rows={7}  placeholder='Comments....'></textarea>
@@ -43,7 +47,7 @@ function Blog() {
     </Card>
     <Card className='dar'>
       <Card.Body className='foot'>
-        <div className='ico'>
+        <div className='ico heart'>
        <Favorite/>
        </div>
        <div className='ico'>
@@ -58,7 +62,10 @@ function Blog() {
       </Card.Body>
     </Card>
     </div>
+    </Col>
     )}
+    </Row>
+    </Container>
     </>
   );
 }

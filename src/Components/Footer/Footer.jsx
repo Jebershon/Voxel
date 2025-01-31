@@ -7,7 +7,7 @@ export default function Footer(){
         <div className='footer'>
          <div className='about'>
           <div style={{display:"flex"}}>
-          <img src={connect} width={40} height={40}/><h1>&nbsp;Shape Your Story</h1>
+          <img src={connect} width={40} height={40}/><h1 className='hed'>&nbsp;Shape Your Story</h1>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit nisi inventore ipsam iste exercitationem porro eius enim saepe ducimus quis assumenda quidem cum minus, aperiam sunt totam illo necessitatibus!</p>
           <div className='icons'>

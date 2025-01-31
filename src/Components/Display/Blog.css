@@ -1,5 +1,19 @@
+/* rgb(232,255,175) */
+@media screen and (min-width:1200px) {
+ .scroll{
+  height: 300px;
+  overflow-y: scroll;
+ }
+ .foot{
+  display: flex;
+  flex-direction: row;
+ }
+ .ico{
+  width: 20%;
+ }
+}
 .dar{
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(232,255,175);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 15px;
@@ -11,33 +25,13 @@
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     box-shadow: inset 0px 0px 36px -8px rgb(0, 0, 0);
-    border: 4px solid white;
+    border: 4px solid rgb(232,255,175);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.476) 0%, rgba(65, 65, 65, 0.628) 52%, rgba(29, 29, 29, 0.471) 100%);
     color: white;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-  }
-  
-  .car::before {
-    content: "";
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: -40%;
-    left: -20%;
-    border-radius: 50%;
-    border: 35px solid #5b5b5b89;
-    transition: all .8s ease;
-    filter: blur(.5rem);
-  }
-  .car:hover::before {
-    width: 140px;
-    height: 140px;
-    top: -30%;
-    left: 50%;
-    filter: blur(0rem);
   }
   .img{
     width: 50px;
@@ -50,7 +44,7 @@
     color: white;
   }
   .post{
-    width: auto;
+    width: 250px;
     height: auto;
     border-radius: 6px;
   }
@@ -67,19 +61,20 @@
   }
 }
   .ico{
-    border: 1px solid white;
+    color: rgb(232,255,175);
+    background-color: black;
+    border: 1px solid rgb(232,255,175);
     border-radius: 12px;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 2px;
     width: fit-content;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    box-shadow: 6px 6px 12px rgba(164, 187, 95, 0.574), -6px -6px 12px rgba(195, 255, 45, 0.407);
     transition: 0.3s ease;
   }
   .ico:hover{
-    box-shadow: none;
-    border: none;
+    transform: scale(1.1);
   }
   .comment{
     background-color: black;

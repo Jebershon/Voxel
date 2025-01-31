@@ -2,13 +2,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Button, Card, CardBody, CardHeader,Row,Col } from 'react-bootstrap';
 import logo from '../Asserts/logo.png';
 import './Home.css';
-import { AccountCircle, CopyAll, Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
-import { useNavigate } from 'react-router-dom';
+import { AccountCircle, CopyAll, Facebook, Instagram, LinkedIn, Logout, Twitter } from '@mui/icons-material';
+import { useNavigate,useLocation } from 'react-router-dom';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import rock from '../Asserts/rocket.png';
 import moon from '../Asserts/8407-removebg-preview.png';
@@ -17,11 +17,18 @@ import ill1 from '../Asserts/ill1.png';
 import ill2 from '../Asserts/ill2.png';
 import ill3 from '../Asserts/ill3.png';
 import Accordion from 'react-bootstrap/esm/Accordion';
+import { googleLogout } from '@react-oauth/google';
+import { jwtDecode } from 'jwt-decode';
 function Home() {
     const [show, setShow] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
+    const { state } = location;
+    const token = state ? state.token : null;
+    console.log(token);
     const handleClose = () => setShow(false);
     const toggleShow = () => setShow((s) => !s);
+    const [user,setUser] = useState("");
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" className="nav-color" data-bs-theme="dark" fixed='top'>
@@ -38,6 +45,7 @@ function Home() {
             <Nav.Link eventKey={2} onClick={toggleShow} className='m-2'><AccountCircle/></Nav.Link>
             <Nav.Link onClick={()=>{navigate("/Signup")}} className='m-2'>Signup</Nav.Link>
             <Nav.Link onClick={()=>{navigate("/Signin")}} className='m-2'>Login</Nav.Link>
+            <Nav.Link onClick={()=>{googleLogout();localStorage.clear()}} className='m-2'><Logout/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -183,8 +191,8 @@ function Home() {
           <Card.Title>Our Latest Insights</Card.Title>
           </CardHeader>
         <Card.Body>
-          <Card.Text>
-          Stay ahead of the curve with Voxel's latest articles on emerging trends and innovative ideas. From tech advancements to creative storytelling, our insights keep you informed and inspired.
+          <Card.Text style={{color:"grey"}}>
+            Stay ahead of the curve with Voxel's latest articles on emerging trends and innovative ideas. From tech advancements to creative storytelling, our insights keep you informed and inspired.
           </Card.Text>
         </Card.Body>
       </Card>
@@ -262,7 +270,7 @@ function Home() {
               <Button variant="secondary" className='butn'>
                 <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" alt="Profile" />
               </Button>
-              <span className="name mt-3">Eleanor Pena</span>
+              <span className="name mt-3">{user}</span>
               <span className="idd">@eleanorpena</span>
               <div className="d-flex flex-row justify-content-center align-items-center gap-2">
                 <span className="idd1">Oxc4c16a645_b21a</span>

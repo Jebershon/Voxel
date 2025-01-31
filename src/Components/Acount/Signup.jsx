@@ -15,7 +15,6 @@ export default function Signup(){
     return (
     <>
     <div className="con">
-        <div className="card-bo">
         <div className="cards">
             <h1>Register</h1>
           <form onSubmit={(e)=>{register(e.preventDefault())}}>
@@ -27,7 +26,6 @@ export default function Signup(){
             <button type="submit" className="button">Signup</button>
             <p>Already have an account? <span onClick={()=>{navigate('/Signin')}} className="sign">Login</span></p>
           </form>
-        </div>
         </div>
     </div>
     </>
